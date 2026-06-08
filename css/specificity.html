@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        h1{
+            color: aqua !important;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+        .cred{
+            color: red;
+        }
+
+        .cpurple{
+            color: purple;
+        }
+
+        [data-x=a]{
+            background-color: red;
+        }
+
+        /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41*/
+        a.vasuclass.rohan-class[href]:hover {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <p>Inline style > Id selector > Class or Attribute Selector > Element Selector > universal Selector</p>
+    <p>Important is most important than inline style.</p>
+    <div>
+        <h1 style="color: greenyellow;" class="yellow cred cpurple" data-x="a">
+            CSS Specificity.
+        </h1>
+    </div>
+
+    <div class="specCalc">
+        <h3>To Calculate speciflicity: assign a value to each part of the selector:</h3>
+        <ul>
+            <li>Universal selector: 0</li>
+            <li>Element selector and pseudo-elements: 1</li>
+            <li>Class selector, attribute selectors and pseudo-classes: 10</li>
+            <li>Id selectors: 100</li>
+            <li>Inline style: 1000</li>
+        </ul>
+        <p>Then, add up the values of all the parts in the selector.</p>
+    </div>
+</body>
+</html>
