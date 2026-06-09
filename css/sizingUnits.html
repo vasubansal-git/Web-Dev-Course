@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sizing Units in CSS.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+        }
+        .box {
+            box-sizing: border-box;
+            border: 2px solid blue;
+            /* width: 1080px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: aquamarine;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid blue;
+            /* width: 1080px; */
+            width: 80vw;
+            height: 80vh;
+            margin: 23px auto;
+            /* font-size: 16px; */
+            background-color: aquamarine;
+        }
+
+        .container p{
+            /* font-size: 2em; Inherit krke 2 guna */
+            font-size: 2em;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="box">
+        This is a box
+    </div>
+
+    <div class="container">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias maxime minus ab error odit, atque consectetur quaerat quod dolorum, sit soluta! Suscipit recusandae officiis, perferendis amet tempora mollitia ea, ipsum cumque, repudiandae similique quae non voluptas? Ullam molestiae, deleniti quia sint neque mollitia, vitae tenetur suscipit unde autem sunt dignissimos necessitatibus ex quas dolores. Labore, at!
+        </p>
+    </div>
 </body>
 </html>
