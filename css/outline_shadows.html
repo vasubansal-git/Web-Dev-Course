@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Outlines and shadows</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow: 5px 15px 5px #888888;
+        }
+
+        .text-element {
+            text-shadow: 2px 2px 4px #888888;
+            outline: 2px solid black;
+            border: 2px solid green;
+            outline-offset: 6px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="box">
+        I am a box.
+    </div>
+
+    <p class="text-element">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere laboriosam aliquid cum. Voluptatem inventore eum tenetur atque delectus maxime. Modi est tenetur neque, pariatur quis dicta error quos dolor praesentium id. Reiciendis, aut eaque?</p>
 </body>
 </html>
