@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4: CSS Multicolor Website</title>
+    <style>
+
+        :root{
+            --primary-color: #bb2929;
+            --color: #e7877e;
+            --text-color: white;
+            --defpad: 23px;
+            --defop: 0.4;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: var(--color);
+        }
+        nav{
+            background-color: var(--primary-color);
+            padding: 12px 0;
+            text-align: right;
+        }
+        ul li{
+            color: var(--text-color);
+            list-style: none;
+            display: inline;
+            padding: 23px;
+        }
+
+        ul li a{
+            color: var(--text-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
