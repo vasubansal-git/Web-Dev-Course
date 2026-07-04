@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: rgb(206, 206, 101);
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotate(0.125turn);
+            transform-origin: 0% 0%;
+            transform: rotate(40deg);
+            transform: rotate(0.5turn);
+            transform: rotateX(40deg);
+            transform: rotateY(40deg);
+            transform: rotateZ(40deg);
+            transform: scale(1.6);
+            transform: scale3d(1.6);
+            transform: skewX(5deg);
+            transform: translateY(100%) skewX(40deg) translateX(45%);
+        }
+    </style>
+</head>
+<body>
+    <h2>2D Transform:</h2>
+    <p>This property allows the content to be restructed in ways like translate, rotate, scale or skew, etc. As it is 2D, therefore the content is transformed into x and y dimensions.</p>
+    <br>
+    <h2>3D Transform:</h2>
+
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
