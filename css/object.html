@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object fit and Position</title>
+    <style>
+        .container{
+            height: 488px;
+            width: 434px;
+            border: 2px solid red;
+            background-image: url("https://images.pexels.com/photos/31438472/pexels-photo-31438472.jpeg?cs=srgb&dl=pexels-2150381842-31438472.jpg&fm=jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+
+            background-clip: border-box;
+        }
+
+        img{
+            width: 434px;
+            height: 488px;
+            object-fit: cover;
+            object-position: 50% 50%;
+            /* object-fit: fill; */
+            /* object-position: 10px 20px; */
+            /* object-position: bottom right; */
+            /* object-fit: contain; */
+            /* object-fit: scale-down; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://images.pexels.com/photos/31438472/pexels-photo-31438472.jpeg?cs=srgb&dl=pexels-2150381842-31438472.jpg&fm=jpg" alt="horse image"> -->
+    </div>
+</body>
+</html>
